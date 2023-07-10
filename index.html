@@ -1,5 +1,7 @@
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Let Me Demo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet">
@@ -11,7 +13,7 @@
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
             data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+            <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -23,14 +25,32 @@
                 </li>
             </ul>
             <form class="w-auto">
-                <input type="search" class="form-control" placeholder="Filter" aria-label="Search">
+                <input id="demo-filter" type="search" class="form-control" placeholder="Filter Demos" aria-label="Search">
             </form>
         </div>
     </div>
 </nav>
 
-<main></main>
+<div class="container-fluid row">
+    <div class="card">
+        <img class="card-img-top" src="images/itf-logo.jpeg" alt="iron tribe logo">
+        <div class="card-img-overlay">
+            <h4 class="card-title">Tribe Tools</h4>
+            <p class="card-text">Feature suggestions for ITF UI</p>
+            <a class="nav-link github" href="https://github.com/gcox32/tribe-tools" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="images/cc-logo.png" alt="crossroads logo">
+        <div class="card-img-overlay">
+            <h4 class="card-title">Crossroads Surveys</h4>
+            <p class="card-text">Church Health surveys for Crossroads</p>
+            <a class="nav-link github" href="https://github.com/gcox32/church-health" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</div>
 
 <footer class="bg-link text-center "></footer>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
