@@ -7,7 +7,7 @@ filter.addEventListener('input', function () {
         for (let i = 0; i < cards.length; i++) {
             var cardTitle = cards[i].querySelector('.card-title').innerText.toUpperCase();
             var cardText = cards[i].querySelector('.card-text').innerText.toUpperCase();
-            if (!(cardTitle.includes(val))) {
+            if (!(cardTitle.includes(val)) && !(cardText.includes(val))) {
                 cards[i].style.display = 'none';
             } else {
                 cards[i].style.display = 'block';
@@ -19,3 +19,9 @@ filter.addEventListener('input', function () {
         }
     }
 })
+
+for (let i=0; i < cards.length; i++) {
+    cards[i].addEventListener('click', function () {
+        window.open(cards[i].dataset.dest);
+    })
+}
