@@ -20,8 +20,10 @@ filter.addEventListener('input', function () {
     }
 })
 
-for (let i=0; i < cards.length; i++) {
-    cards[i].addEventListener('click', function () {
-        window.open(cards[i].dataset.dest);
-    })
+for (let i = 0; i < cards.length; i++) {
+    if (cards[i].dataset.dest) {
+        cards[i].addEventListener('click', function () {
+            window.open(cards[i].dataset.dest);
+        })
+    }
 }
