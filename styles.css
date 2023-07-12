@@ -20,6 +20,10 @@
     position: absolute;
     bottom: 25px;
     right: 25px;
+    transition: transform 100ms ease-in-out;
+}
+.nav-link.github:hover {
+    transform: scale(1.2);
 }
 .fa {
     font-size: large;
