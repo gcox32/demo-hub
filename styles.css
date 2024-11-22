@@ -30,3 +30,53 @@
 .fa {
     font-size: large;
 }
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    max-width: 80%
+}
+
+.tag {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tag:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Tag types */
+.tag[data-type="frontend"] {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.tag[data-type="backend"] {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.tag[data-type="cloud"] {
+    background-color: #eceff1;
+    color: #455a64;
+}
+
+.tag[data-type="language"] {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.tag[data-type="domain"] {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
