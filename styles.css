@@ -1,6 +1,6 @@
 .card {
-    width: 300px;
-    height: 300px;
+    width: 316px;
+    height: 316px;
     margin: 2em;
     transition: 100ms ease-in-out;
     justify-content: center;
@@ -51,10 +51,6 @@
     outline: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.tag:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-}
-
 /* Tag types */
 .tag[data-type="frontend"] {
     background-color: #e3f2fd;
@@ -79,4 +75,29 @@
 .tag[data-type="domain"] {
     background-color: #fff3e0;
     color: #ef6c00;
+}
+
+/* Add these styles */
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid.row {
+    flex: 1;
+    margin: 0;  /* Reset any margins if needed */
+}
+
+footer {
+    margin-top: auto;  /* This pushes the footer to the bottom */
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
 }
